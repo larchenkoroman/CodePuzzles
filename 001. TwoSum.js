@@ -29,5 +29,6 @@ function TwoSum(numbers, target){
    return result;
 }
 
-console.log(TwoSum([2, 7, 11, 15], 26));
-console.log(TwoSum([2, 7, 11, 15], 22));
+let input = [2, 7, 11, 15];
+console.log(TwoSum(input, 26));
+console.log(TwoSum(input, 22));
