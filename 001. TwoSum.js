@@ -11,13 +11,13 @@ Output: index1=1, index2=2
 function TwoSum(numbers, target){
    const
       mapping = new Map(),
-      result = []
-   let
-      searched = 0;
+      result = [];
+   let searched;
 
    for(let i = 0; i < numbers.length; i++){
       mapping.set(numbers[i], i);
    }
+
    for(let i = 0; i < numbers.length; i++){
       searched = target - numbers[i];
 
