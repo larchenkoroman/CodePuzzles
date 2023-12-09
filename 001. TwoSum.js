@@ -7,6 +7,11 @@ You may assume that each input would have exactly one solution.
 
 Input: numbers={2, 7, 11, 15}, target=9
 Output: index1=1, index2=2
+
+The first solution is hashing.
+Scan the array from the left to the right, and store the number and its index(the original index in the array) in the map.
+Then, scan the array again with the help of map. The time complexity is O(n).
+
 */
 function TwoSum(numbers, target){
    const
