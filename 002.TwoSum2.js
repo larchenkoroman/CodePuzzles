@@ -29,11 +29,8 @@ function TwoSum(numbers, target) {
     while(start < end) {
         sum = elements[start].val + elements[end].val;
         if(sum === target) {
-            result.push(elements[start].index + 1);
-            if(elements[start].index < elements[end].index)
-                result.push(elements[end].index + 1);
-            else
-                result.unshift(elements[end].index + 1);
+            result[0] = Math.min(elements[start].index + 1, elements[end].index + 1);
+            result[1] = Math.max(elements[start].index + 1, elements[end].index + 1);
             break;
         }
         else if (sum > target)
@@ -44,4 +41,4 @@ function TwoSum(numbers, target) {
     return result;
 }
 
-console.log(TwoSum([5,2,8,4], 13));
+console.log(TwoSum([5,2,8,4], 12));
